@@ -23,15 +23,23 @@
         <tr>
             <th>Nombre</th>
             <th>Apellido</th>
+            <th>Edad</th>
+            <th>Sexo</th>
             <th>Teléfono</th>
             <th>Email</th>
+            <th>Dirección</th>
+            <th>DNI</th>
         </tr>
 
         <tr>
             <td id="nombre"></td>
             <td id="apellido"></td>
+            <td id="edad"></td>
+            <td id="sexo"></td>
             <td id="telefono"></td>
             <td id="email"></td>
+            <td id="direccion"></td>
+            <td id="dni"></td>
         </tr>
 
     </table>
@@ -46,13 +54,21 @@
         function cargadatos(){
             nombre = prompt ("Ingrese su Nombre");
             apellido = prompt ("Ingrese su Apellido");
+            edad = prompt ("Ingrese su edad");
+            sexo = prompt ("ingrese su genero");
             telefono = prompt ("Ingrese su numero telefonico");
             email = prompt ("Ingrese su direcion de correo electronico");
+            direccion = prompt ("ingrese su direccion");
+            dni = prompt ("ingrese su D.N.I.");
 
             document.getElementById("nombre").innerText= nombre;
             document.getElementById("apellido").innerText= apellido;
+            document.getElementById("edad").innerText= edad;
+            document.getElementById("sexo").innerText= sexo;
             document.getElementById("telefono").innerText= telefono;
             document.getElementById("email").innerText= email;
+            document.getElementById("direccion").innerText= direccion;
+            document.getElementById("dni").innerText= dni;
         }
     </script>
 
