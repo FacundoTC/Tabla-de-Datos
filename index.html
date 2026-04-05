@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos</title>
+    <head>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+</head>
+<body>
+    <h1>Planilla de contacto medico</h1>
+    <h3>Datos del paciente:</h3>
+    <audio id="fondo" autoplay loop>
+  <source src="musica/sonido.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById('fondo');
+  audio.volume = 0.2; // 20% de volumen
+</script>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+        </tr>
+
+        <tr>
+            <td id="nombre"></td>
+            <td id="apellido"></td>
+            <td id="telefono"></td>
+            <td id="email"></td>
+        </tr>
+
+    </table>
+    <button type="button" onclick="cargadatos()">Ingresar Datos</button>
+
+    <script>
+  const audio = document.getElementById('fondo');
+  audio.volume = 0.2; // 20% de volumen
+</script>
+</body>
+    <script>
+        function cargadatos(){
+            nombre = prompt ("Ingrese su Nombre");
+            apellido = prompt ("Ingrese su Apellido");
+            telefono = prompt ("Ingrese su numero telefonico");
+            email = prompt ("Ingrese su direcion de correo electronico");
+
+            document.getElementById("nombre").innerText= nombre;
+            document.getElementById("apellido").innerText= apellido;
+            document.getElementById("telefono").innerText= telefono;
+            document.getElementById("email").innerText= email;
+        }
+    </script>
+
+</html>
