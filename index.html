@@ -14,7 +14,6 @@
     <audio id="fondo" autoplay loop>
   <source src="musica/sonido.mp3" type="audio/mpeg">
 </audio>
-
 <script>
   const audio = document.getElementById('fondo');
   audio.volume = 0.2; // 20% de volumen
@@ -41,17 +40,50 @@
             <td id="direccion"></td>
             <td id="dni"></td>
         </tr>
-
     </table>
-    <button type="button" onclick="cargadatos()">Ingresar Datos</button>
+    <button type="button" onclick="cargadatospaciente()">Ingresar Datos</button>
+
+    <h3>Datos del Contacto de Emergencia:</h3>
+    <table>
+        <tr>
+            <th>Nombre del Contacto</th>
+            <th>Parentesco o Relacion</th>
+            <th>Teléfono</th>
+        </tr>
+        <tr>
+            <td id="nombreContacto"></td>
+            <td id="relacionContacto"></td>
+            <td id="telefonoContacto"></td>
+        </tr>
+    </table>
+    <button type="button" onclick="cargadatoscontacto()">Ingresar Datos</button>
+
+    <h3>Información médica general</h3>
+    <table>
+        <tr>
+            <th>Grupo sanguíneo</th>
+            <th>Peso</th>
+            <th>Altura</th>
+            <th>Alergias</th>
+            <th>Enfermedades crónicas</th>
+            <th>Medicación actual</th>
+            <th>Historial quirúrgico</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <button type="button" onclick="informacionmedica()">Ingresar Datos</button>
+</body>
 
     <script>
-  const audio = document.getElementById('fondo');
-  audio.volume = 0.2; // 20% de volumen
-</script>
-</body>
-    <script>
-        function cargadatos(){
+        function cargadatospaciente(){
             nombre = prompt ("Ingrese su Nombre");
             apellido = prompt ("Ingrese su Apellido");
             edad = prompt ("Ingrese su edad");
